@@ -10,6 +10,5 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="dummyFlow" doc:id="8e7a2e22-6075-4a95-b849-d48974537e03" >
 		<http:listener doc:name="Listener" doc:id="3d2cb04c-0e2d-403c-ac62-0f596e11836e" config-ref="HTTP_Listener_config" path="/dummy"/>
 		<set-payload value='#["Hi Dummy"]' doc:name="Set Payload" doc:id="f45665eb-6123-4d4e-bd06-4547c80e0f60" />
-		<logger level="INFO" doc:name="Logger" doc:id="62bffad5-5b86-4085-9b79-a9fd7c30769b" message="#[payload]"/>
 	</flow>
 </mule>
